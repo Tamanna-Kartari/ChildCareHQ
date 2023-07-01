@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #000;
+    height: 70px;
+    display: flex;
+    justify-content: space-between; /* Set the items at the ends of the navbar */
+    align-items: center; /* Vertically center the items within the navbar */
+    padding: 0 20px; /* Add padding for spacing */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    transition: color 0.3s ease-in-out;
+    font-size: 22px;
+}
+
+.nav-item a:hover {
+    color: #ff6a3d;
+}
+
+.nav-item-home {
+    margin-right: 1030px; /* Push "Home" link to the left */
+}
+
+.nav-item-contact {
+    margin-left: auto; /* Push "Contact" link to the right */
+}

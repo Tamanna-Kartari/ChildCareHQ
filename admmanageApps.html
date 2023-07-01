@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Appointments Management</title>
+<link rel="stylesheet" type="text/css" href="css/button.css">
+
+</head>
+
+<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image:url(https://t4.ftcdn.net/jpg/02/55/77/03/360_F_255770374_rbmJO9gkkIhMBcyVPc3iW016BCLDvcWc.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav ul li a {
+	color: #000000;
+	text-decoration: none;
+	padding: 5px;
+}
+
+main {
+	margin: 20px;
+	text-align: center;
+}
+
+form {
+	border: 1px solid #ffffff;
+	padding: 10px;
+	font-size: 22px;
+}
+
+label {
+	display: inline-block;
+	width: 205px;
+	text-align: right;
+	margin-right: 10px;
+	padding-top: 10px;
+	color: black;
+}
+
+input[type="text"], select, input[type="date"], input[type="time"] {
+	width: 200px;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+input[type="submit"] {
+	background-color: #003366;
+	color: #ffffff;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	font-size: 23px;
+}
+
+input[type="submit"]:hover {
+	background-color: #cccccc;
+}
+</style>
+<body>
+	<header>
+		<h1>Hospital Appointments Management</h1>
+	</header>
+
+	<main>
+	<h2>Manage Appointments</h2>
+	<form action="#" method="post">
+		<br> <label for="patient-name"> <b>Patient Name:</b></label>
+		     <input type="text" id="patient-name" name="patient-name" required><br>
+
+		     <label for="doctor-name"> <b>Doctor Name:</b></label>
+		     <select id="doctor-name" name="doctor-name" required>
+			  <option value="">Choose Doctor</option>
+			  <option value="Dr. John Doe">Dr. Usha Gajbhiye</option>
+			  <option value="Dr. Jane Smith">Dr. Saina Mhatre</option>
+			  <option value="Dr. Michael Lee">Dr. Manish Sarote</option>
+		     </select><br> 
+		     
+		     <label for="appointment-date"> <b>Appointment Date:</b></label>
+		     <input type="date" id="appointment-date" name="appointment-date"required><br> 
+		     
+		     <label for="appointment-time"> <b>Appointment Time:</b></label> 
+		     <input type="time" id="appointment-time" name="appointment-time"required><br><br> 
+			 <input type="submit" class="my-button" value="Fix Appointment"> <br><br>
+	</form>
+	</main>
+	<footer>
+		<div style="text-align: center; background-color: hsl(182, 100%, 35%);; color: rgb(0, 0, 0); font-family: 'Rubik', sans-serif; width: 100%; position: fixed; bottom: 0;">
+			ChildCareHQ &COPY; All Rights Reserved. <br>
+		</div>
+	</footer>
+</body>
+</html>

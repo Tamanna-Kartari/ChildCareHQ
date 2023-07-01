@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hospital Feedback Form</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+		background-image: url(https://blog.imec.org/hubfs/workplace%20Feedback-jpg.jpeg);
+	   background-size: cover;
+    }
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+	text-align: center;
+    margin: 0;
+}
+.container {
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 20px;
+	background-color: #f2f2f2;
+    border-radius: 15px;
+}
+
+form {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr;
+}
+
+label {
+	font-weight: bold;
+    font-size: 22px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+	width: 96%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    font-size: 18px;
+}
+
+input[type="submit"] {
+	background-color: #008CBA;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #005f79;
+}
+
+.imp{
+    font-size: 19px;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Feedback Form</h1>
+    </header>
+    <br><br>
+	<div class="container"><br>
+		<form action="#" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" placeholder="Write your feedback here" required></textarea>
+<br>
+            <div class="imp">
+               Help us improve! Tell us about your experience in our hospital. Your feedback is important to us :)
+            </div>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

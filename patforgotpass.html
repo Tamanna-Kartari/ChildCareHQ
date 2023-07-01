@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forgot Password</title>
+</head>
+
+<style>
+    body {
+    background-color: azure;
+    font-family: Arial, sans-serif;
+}
+
+.forgot-password-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.forgot-password-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.forgot-password-text {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.forgot-password-form {
+    margin-bottom: 20px;
+}
+
+.forgot-password-input {
+    width: 91%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.forgot-password-button {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.forgot-password-button:hover {
+    background-color: #0056b3;
+}
+
+.back-to-login-link {
+    color: #007bff;
+    text-decoration: none;
+}
+.back-to-login-link:hover {
+    text-decoration: underline;
+}
+
+</style>
+
+<body>
+    <div class="forgot-password-container">
+        <h2 class="forgot-password-title">Forgot Password</h2>
+        <p class="forgot-password-text">Enter your email address below.</p>
+        <form action="./pfp" class="forgot-password-form" method="post">
+            <input type="email" class="forgot-password-input" name="email" placeholder="Email address"  required>
+            <button type="submit" class="forgot-password-button">Reset Password</button>
+        </form>
+        <a href="patientlogin2.html" class="back-to-login-link">Back to Login</a>
+    </div>
+</body>
+
+</html>

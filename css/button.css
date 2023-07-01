@@ -1,0 +1,18 @@
+.my-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, #ff3c64, #ff6a3d);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .my-button:hover {
+    background: linear-gradient(to right, #1f25e4, #e51b1b);
+  }
